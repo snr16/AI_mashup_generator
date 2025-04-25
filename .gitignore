@@ -1,0 +1,60 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+venv/
+ENV/
+env/
+.env
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Project specific
+mashup_ai/data/songs/*
+mashup_ai/data/separated/*
+mashup_ai/output/final_mashups/*
+mashup_ai/models/*
+!mashup_ai/data/songs/.gitkeep
+!mashup_ai/data/separated/.gitkeep
+!mashup_ai/output/final_mashups/.gitkeep
+!mashup_ai/models/.gitkeep
+
+# Logs
+*.log
+logs/ 
+
+/data/output/final_mashups/*
+/data/songs/*
+/data/separated/*

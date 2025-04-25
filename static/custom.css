@@ -1,0 +1,670 @@
+/* Main app background */
+.stApp {
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+}
+.main .block-container {
+    padding-top: 1rem;
+}
+
+/* Top navbar styling - comprehensive targeting */
+header[data-testid="stHeader"],
+.st-emotion-cache-19rxjzo,
+.st-emotion-cache-1avcm0n,
+.st-emotion-cache-d1r7ba {
+    background: linear-gradient(90deg, #1e3c72 0%, #2a5298 100%) !important;
+    background-color: transparent !important;
+}
+
+/* Target all div elements within the header */
+header[data-testid="stHeader"] div,
+div[data-testid="stToolbar"],
+div[data-testid="stDecoration"],
+div[data-baseweb="popover"],
+div[class*="st-emotion-cache"] {
+    background-color: transparent !important;
+}
+
+/* Dropdown menu from top right */
+div[data-baseweb="popover"] div[data-baseweb="menu"] {
+    background: linear-gradient(135deg, rgba(30, 41, 59, 0.95) 0%, rgba(44, 82, 130, 0.95) 100%) !important;
+}
+
+/* Hamburger menu and its content */
+button[kind="header"],
+button[data-testid="baseButton-headerNoPadding"] {
+    color: white !important;
+    background-color: transparent !important;
+}
+
+/* For Streamlit's internal class names */
+.st-emotion-cache-1dp5vir,
+.st-emotion-cache-ocqkz7,
+.st-emotion-cache-16txtl3,
+.st-emotion-cache-18ni7ap {
+    background: linear-gradient(90deg, #1e3c72 0%, #2a5298 100%) !important;
+}
+
+/* Text styling */
+h1, h2, h3, h4, h5, h6, p, li, .stMarkdown, label, .stMarkdown div span {
+    color: white !important;
+}
+
+/* Button styling */
+.stButton button {
+    background-color: #4CAF50 !important;
+    color: white !important;
+    border-radius: 5px !important;
+    border: none !important;
+    padding: 0.5rem 1rem !important;
+    font-weight: 600 !important;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;
+    transition: all 0.3s ease !important;
+}
+.stButton button:hover {
+    background-color: #45a049 !important;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15) !important;
+    transform: translateY(-2px) !important;
+}
+
+/* Section styling */
+.section-card {
+    background: linear-gradient(135deg, rgba(30, 41, 59, 0.8) 0%, rgba(44, 82, 130, 0.7) 100%);
+    border-radius: 10px;
+    padding: 1.5rem;
+    backdrop-filter: blur(10px);
+    margin-bottom: 1.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Slider styling */
+.stSlider [data-baseweb="slider"] {
+    margin-top: 1rem;
+}
+
+/* Select box styling - fixing text color */
+.stSelectbox div,
+.stSelectbox [data-baseweb="select"] div,
+.stSelectbox [data-baseweb="value"],
+.stSelectbox [data-baseweb="tag"],
+.stSelectbox [data-testid="stSelectbox"] {
+    background-color: white !important;
+    color: black !important;
+}
+
+.stSelectbox div span,
+.stSelectbox [data-baseweb="select"] div span,
+.stSelectbox [data-baseweb="value"] span,
+.stSelectbox [data-baseweb="tag"] span {
+    color: black !important;
+    font-weight: 500 !important;
+    text-shadow: none !important;
+}
+
+/* Force selectbox inputs to have black text */
+.stSelectbox input,
+.stMultiSelect input {
+    color: black !important;
+    background-color: white !important;
+}
+
+/* Make sure the dropdown options have black text */
+.stSelectbox [data-baseweb="menu"] ul li,
+.stMultiSelect [data-baseweb="menu"] ul li,
+[data-baseweb="menu"] ul li,
+[data-baseweb="popover"] ul li {
+    color: black !important;
+    background-color: white !important;
+    font-weight: normal !important;
+}
+
+/* Selected item in dropdown */
+.stSelectbox [data-baseweb="menu"] ul li[aria-selected="true"],
+.stMultiSelect [data-baseweb="menu"] ul li[aria-selected="true"],
+[data-baseweb="menu"] ul li[aria-selected="true"],
+[data-baseweb="popover"] ul li[aria-selected="true"] {
+    background-color: #4CAF50 !important;
+    color: white !important;
+}
+
+/* Dropdown Menu and Options */
+div[data-baseweb="popover"] {
+    background-color: white !important;
+    border: 1px solid rgba(30, 41, 59, 0.3) !important;
+    border-radius: 5px !important;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1) !important;
+}
+div[data-baseweb="popover"] ul {
+    background-color: white !important;
+}
+div[data-baseweb="menu"] {
+    background-color: white !important;
+}
+div[data-baseweb="select"] ul {
+    background-color: white !important;
+}
+div[data-baseweb="select"] ul li,
+div[data-baseweb="menu"] ul li {
+    color: black !important;
+    background-color: white !important;
+}
+div[data-baseweb="select"] ul li:hover,
+div[data-baseweb="menu"] ul li:hover {
+    background-color: #f0f4f8 !important;
+}
+div[data-baseweb="select"] ul li[aria-selected="true"] {
+    background-color: #4CAF50 !important;
+    color: white !important;
+}
+
+/* Ensure number inputs have gradients and proper text color */
+.stNumberInput div[data-baseweb="input-container"] {
+    background: linear-gradient(135deg, rgba(30, 41, 59, 0.9) 0%, rgba(44, 82, 130, 0.8) 100%) !important;
+    border-radius: 8px !important;
+}
+
+/* Fix text in numeric inputs - make it black instead of white */
+.stNumberInput input[type="number"] {
+    color: black !important;
+    background: white !important;
+    font-weight: 500 !important;
+    text-shadow: none !important;
+}
+
+/* Fix file uploader text colors - make it black instead of white */
+[data-testid="stFileUploader"] p, 
+[data-testid="stFileUploader"] span, 
+[data-testid="stFileUploader"] div,
+[data-testid="stFileUploader"] small {
+    color: black !important;
+    text-shadow: none !important;
+    background-color: rgba(255, 255, 255, 0.9) !important;
+    padding: 2px 5px !important;
+    border-radius: 4px !important;
+}
+
+/* Specifically target the drag and drop text */
+[data-testid="stFileUploader"] div.uploadMessage {
+    color: black !important;
+    text-shadow: none !important;
+    background-color: rgba(255, 255, 255, 0.9) !important;
+    padding: 4px 8px !important;
+    border-radius: 4px !important;
+    font-weight: 500 !important;
+}
+
+/* Target file upload progress indicators */
+[data-testid="stFileUploader"] .progress-text,
+[data-testid="stFileUploader"] .progress-bar {
+    color: black !important;
+    background-color: rgba(255, 255, 255, 0.9) !important;
+}
+
+/* Add bright glow to emphasize input controls */
+.stNumberInput:focus-within,
+.stTextInput:focus-within,
+.stTextArea:focus-within,
+.stSelectbox:focus-within,
+[data-testid="stFileUploader"]:hover {
+    box-shadow: 0 0 8px 2px rgba(76, 175, 80, 0.5) !important;
+    border-color: #4CAF50 !important;
+}
+
+/* Text input styling - make text black */
+.stTextInput [data-baseweb="input"] {
+    background: white !important;
+    border: 1px solid rgba(30, 41, 59, 0.4) !important;
+    border-radius: 6px !important;
+}
+.stTextInput [data-baseweb="input"] input {
+    color: black !important;
+    background: white !important;
+    font-weight: 500 !important;
+    text-shadow: none !important;
+}
+
+/* Style for text areas too */
+.stTextArea textarea {
+    color: black !important;
+    background: white !important;
+    border: 1px solid rgba(30, 41, 59, 0.4) !important;
+    border-radius: 6px !important;
+    font-weight: 500 !important;
+    text-shadow: none !important;
+}
+
+/* Specifically target disabled text areas */
+.stTextArea textarea[disabled],
+.stTextArea textarea:disabled,
+textarea[disabled=""],
+textarea:disabled {
+    color: black !important;
+    background: rgb(42, 39, 39) !important;
+    opacity: 1 !important;
+    font-weight: 500 !important;
+    text-shadow: none !important;
+}
+
+/* Info message styling */
+.stAlert {
+    background-color: rgba(30, 41, 59, 0.8) !important;
+    color: white !important;
+    border-radius: 8px !important;
+}
+
+/* Success message */
+.element-container div[data-testid="stMarkdownContainer"] code {
+    background-color: rgba(76, 175, 80, 0.2) !important;
+    border: 1px solid rgba(76, 175, 80, 0.3) !important;
+    border-radius: 6px !important;
+    color: #c5e1a5 !important;
+}
+
+/* Better audio widget */
+audio {
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 0.5rem;
+    background: linear-gradient(135deg, rgba(30, 41, 59, 0.9) 0%, rgba(44, 82, 130, 0.8) 100%) !important;
+    padding: 5px;
+}
+
+/* Fix expander */
+.streamlit-expanderHeader {
+    color: white !important;
+    background: linear-gradient(135deg, rgba(30, 41, 59, 0.9) 0%, rgba(44, 82, 130, 0.8) 100%) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+.streamlit-expanderContent {
+    background: linear-gradient(135deg, rgba(30, 41, 59, 0.9) 0%, rgba(44, 82, 130, 0.7) 100%) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Fix info boxes */
+.stInfo {
+    background-color: rgba(66, 153, 225, 0.2) !important;
+    color: white !important;
+}
+.stSuccess {
+    background-color: rgba(72, 187, 120, 0.2) !important;
+    color: white !important;
+}
+.stWarning {
+    background-color: rgba(237, 137, 54, 0.2) !important;
+    color: white !important;
+}
+.stError {
+    background-color: rgba(245, 101, 101, 0.2) !important;
+    color: white !important;
+}
+
+/* Override any unwanted Streamlit defaults */
+div, span, label, button {
+    color: white !important;
+}
+
+div[data-testid="stVerticalBlock"] div[style*="flex"] {
+    background-color: transparent !important;
+}
+
+/* File uploader styling */
+.stUploadButton, 
+[data-testid="stFileUploader"] {
+    background: linear-gradient(135deg, rgba(30, 41, 59, 0.9) 0%, rgba(44, 82, 130, 0.8) 100%) !important;
+    border-radius: 8px !important;
+    padding: 0.5rem !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+}
+
+[data-testid="stFileUploader"] label {
+    color: white !important;
+}
+
+[data-testid="stFileUploader"] button {
+    background-color: #4CAF50 !important;
+    color: white !important;
+}
+
+/* Custom order section and time inputs */
+div[data-testid="stForm"],
+div.row-widget.stRadio,
+div.row-widget.stCheckbox,
+div[data-testid="stElementToolbar"] {
+    background: linear-gradient(135deg, rgba(30, 41, 59, 0.9) 0%, rgba(44, 82, 130, 0.8) 100%) !important;
+    border-radius: 8px !important;
+    padding: 0.5rem !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+}
+
+/* Segment navigation and ordering */
+div.stSlider,
+div[role="slider"],
+div[data-testid="stVerticalBlock"] > div[style*="overflow: auto"],
+div[data-testid="stSortableList"] {
+    background: linear-gradient(135deg, rgba(30, 41, 59, 0.9) 0%, rgba(44, 82, 130, 0.8) 100%) !important;
+    border-radius: 8px !important;
+    padding: 0.5rem !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+}
+
+/* Lists/timelines of segments */
+ol, ul {
+    background: linear-gradient(135deg, rgba(30, 41, 59, 0.9) 0%, rgba(44, 82, 130, 0.8) 100%) !important;
+    border-radius: 8px !important;
+    padding: 1rem !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+}
+
+/* Saved segments area */
+div[data-testid="stExpander"] {
+    background: linear-gradient(135deg, rgba(30, 41, 59, 0.9) 0%, rgba(44, 82, 130, 0.8) 100%) !important;
+    border-radius: 8px !important;
+    margin-bottom: 0.5rem;
+}
+
+/* Make sure the file uploader button has proper contrast */
+[data-testid="stFileUploader"] button span {
+    color: white !important;
+    text-shadow: none !important;
+    background-color: transparent !important;
+    padding: 0 !important;
+}
+
+/* Special case for file name and file extension elements in uploader */
+[data-testid="stFileUploader"] .uploadFileName,
+[data-testid="stFileUploader"] .uploadFileExtension,
+[data-testid="stFileUploader"] .uploadStatus {
+    color: black !important;
+    background-color: rgba(255, 255, 255, 0.9) !important;
+    padding: 2px 5px !important;
+    border-radius: 3px !important;
+    margin: 2px !important;
+}
+
+/* Target the file uploader inner container */
+[data-testid="stFileUploader"] > div > div {
+    background-color: rgba(255, 255, 255, 0.05) !important;
+}
+
+/* Make popup text black */
+div[data-baseweb="popover"] div,
+div[data-baseweb="popover"] span,
+div[data-baseweb="popover"] p {
+    color: black !important;
+}
+
+/* Make tooltip text black */
+div[role="tooltip"],
+div[role="tooltip"] span,
+div[role="tooltip"] p {
+    color: black !important;
+    background-color: white !important;
+    border: 1px solid #ddd !important;
+}
+
+/* Override text color for specific elements */
+.stTextInput,
+.stNumberInput,
+.stSelectbox,
+.stMultiSelect,
+.stTextArea {
+    color: black !important;
+}
+
+/* Target segment order text specifically */
+div[data-testid="stVerticalBlock"] [data-baseweb="input"] input {
+    color: black !important;
+    background: white !important;
+    font-weight: 500 !important;
+    text-shadow: none !important;
+}
+
+/* Override the global text color only for specific UI elements that need to be white */
+h1, h2, h3, h4, h5, h6, .stMarkdown p, .stMarkdown li, .stMarkdown div span:not(.stTextInput *, .stNumberInput *, .stSelectbox *, .stMultiSelect *, .stTextArea *) {
+    color: white !important;
+}
+
+/* Target any modal or dialog */
+div[data-modal="true"],
+div[role="dialog"],
+div[data-testid="stModal"] {
+    color: black !important;
+}
+
+div[data-modal="true"] *,
+div[role="dialog"] *,
+div[data-testid="stModal"] * {
+    color: black !important;
+}
+
+/* Specifically target the segment order text inputs */
+input[type="text"].segment-order,
+div[data-testid="stVerticalBlock"] input[type="text"],
+.stTextInput input[type="text"],
+input[type="text"] {
+    color: black !important;
+    background-color: white !important;
+    border: 1px solid rgba(30, 41, 59, 0.4) !important;
+    border-radius: 6px !important;
+    padding: 6px 12px !important;
+    font-weight: 500 !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
+    text-shadow: none !important;
+}
+
+/* Extra override for any remaining white-on-white text issues */
+input, select, textarea, option {
+    color: black !important;
+    background-color: white !important;
+}
+
+/* Make selectbox label/heading text black */
+.stSelectbox > label,
+div[data-baseweb="select-container"] > label,
+.stSelectbox > div > label,
+.stSelectbox label,
+[data-testid="stSelectbox"] label,
+[data-testid="stSelectbox"] > div > label {
+    color: black !important;
+    background-color: rgba(255, 255, 255, 0.9) !important;
+    padding: 2px 6px !important;
+    border-radius: 4px !important;
+    font-weight: 500 !important;
+    margin-bottom: 5px !important;
+    display: inline-block !important;
+}
+
+/* Target multiselect too */
+.stMultiSelect > label,
+.stMultiSelect > div > label {
+    color: black !important;
+    background-color: rgba(255, 255, 255, 0.9) !important;
+    padding: 2px 6px !important;
+    border-radius: 4px !important;
+    font-weight: 500 !important;
+}
+
+/* Make ALL form labels have black text */
+.stForm label,
+.stNumberInput label,
+.stTextInput label,
+.stTextArea label,
+.stCheckbox label,
+.stRadio label,
+.stSlider label,
+.stUploadButton label,
+[data-testid="stForm"] label,
+[data-testid="stWidgetLabel"] {
+    color: black !important;
+    background-color: rgba(255, 255, 255, 0.9) !important;
+    padding: 2px 6px !important;
+    border-radius: 4px !important;
+    font-weight: 500 !important;
+    margin-bottom: 5px !important;
+    display: inline-block !important;
+}
+
+/* But form inputs and their labels should be black */
+input, select, textarea, option,
+.stForm label,
+.stNumberInput label,
+.stTextInput label,
+.stTextArea label,
+.stCheckbox label,
+.stRadio label,
+.stSlider label,
+.stSelectbox label,
+.stMultiSelect label,
+.stUploadButton label {
+    color: black !important;
+}
+
+/* Target ALL widget labels without exception */
+
+
+
+/* Make slider text more visible */
+.stSlider [data-testid="stWidgetLabel"] {
+    margin-bottom: 10px !important;
+    font-weight: 600 !important;
+    padding: 3px 10px !important;
+}
+
+/* Specifically target slider values */
+.stSlider div[role="slider"] {
+    color: black !important;
+    background-color: rgba(255, 255, 255, 0.8) !important;
+    border-radius: 50% !important;
+}
+
+/* Style all annotation text in sliders */
+.stSlider div[data-baseweb="slider"] [role="slider"]::before,
+.stSlider div[data-baseweb="slider"] [role="slider"]::after,
+.stSlider div[data-baseweb="slider"] span {
+    color: black !important;
+    background-color: rgba(255, 255, 255, 0.8) !important;
+    padding: 1px 4px !important;
+    border-radius: 3px !important;
+}
+
+/* Style slider track */
+.stSlider [data-baseweb="slider"] div[data-testid="stTickBar"] {
+    background-color: rgba(255, 255, 255, 0.6) !important;
+}
+
+/* Make all slider value displays more visible */
+.stSlider div[data-baseweb="thumb-value"] {
+    color: black !important;
+    background-color: white !important;
+    border: 1px solid rgba(0, 0, 0, 0.1) !important;
+    font-weight: 500 !important;
+}
+
+/* Override any conflicting styles */
+h1, h2, h3, h4, h5, h6, .stMarkdown p, .stMarkdown li {
+    color: white !important;
+}
+
+/* Target all text in form elements to be black, and all other text to be white */
+.stSelectbox *, 
+.stTextInput *, 
+.stNumberInput *,
+.stTextArea *,
+select, input, textarea, option {
+    color: black !important;
+}
+
+/* Specifically target the widget label text for time selection, common in time selectors */
+[data-testid="stWidgetLabel"]:contains("time"),
+[data-testid="stWidgetLabel"]:contains("Time"),
+[data-testid="stWidgetLabel"]:contains("start"),
+[data-testid="stWidgetLabel"]:contains("Start"),
+[data-testid="stWidgetLabel"]:contains("end"),
+[data-testid="stWidgetLabel"]:contains("End"),
+[data-testid="stWidgetLabel"]:contains("select"),
+[data-testid="stWidgetLabel"]:contains("Select"),
+.stSelectbox [data-testid="stWidgetLabel"] {
+    color: black !important;
+    background-color: rgba(255, 255, 255, 0.95) !important;
+    padding: 3px 8px !important;
+    font-weight: 600 !important;
+}
+
+/* Target specific slider headers like Bass, EQ, Volume */
+.stSlider [data-testid="stWidgetLabel"],
+.stSlider label,
+div.element-container div.stSlider label,
+label:contains("Bass"),
+label:contains("EQ"),
+label:contains("Volume"),
+[data-testid="stWidgetLabel"]:contains("Bass"),
+[data-testid="stWidgetLabel"]:contains("EQ"),
+[data-testid="stWidgetLabel"]:contains("Volume"),
+[data-testid="stWidgetLabel"]:contains("Pitch"),
+[data-testid="stWidgetLabel"]:contains("Treble"),
+[data-testid="stWidgetLabel"]:contains("Mid"),
+div.stSlider > div > div:first-child {
+    color: black !important;
+    background-color: rgba(255, 255, 255, 0.95) !important;
+    font-weight: 600 !important;
+    padding: 3px 10px !important;
+    border-radius: 4px !important;
+    display: inline-block !important;
+    margin-bottom: 5px !important;
+}
+
+/* Make sure all text inside slider labels is black, including any nested elements */
+.stSlider [data-testid="stWidgetLabel"] *,
+.stSlider label *,
+label:contains("Bass") *,
+label:contains("EQ") *,
+label:contains("Volume") *,
+[data-testid="stWidgetLabel"]:contains("Bass") *,
+[data-testid="stWidgetLabel"]:contains("EQ") *,
+[data-testid="stWidgetLabel"]:contains("Volume") *,
+[data-testid="stWidgetLabel"]:contains("Pitch") *,
+[data-testid="stWidgetLabel"]:contains("Treble") *,
+[data-testid="stWidgetLabel"]:contains("Mid") *,
+div.stSlider > div > div:first-child * {
+    color: black !important;
+    text-shadow: none !important;
+}
+
+/* Extreme targeting for slider widgets and their text */
+.stSlider,
+.stSlider *,
+.stSlider div,
+.stSlider span,
+.stSlider p,
+.stSlider h1,
+.stSlider h2,
+.stSlider h3,
+.stSlider h4,
+.stSlider h5,
+.stSlider h6,
+.stSlider label,
+.stSlider [data-testid="stWidgetLabel"],
+.stSlider [data-testid="stWidgetLabel"] > *,
+div.stSlider > div:first-child,
+div.stSlider > div:first-child > div:first-child,
+div.stSlider > div:first-child > div:first-child > *,
+div.element-container div.stSlider div:first-child,
+div.element-container div.stSlider div:first-child > div:first-child,
+div.element-container div.stSlider div:first-child > div:first-child > *,
+div.element-container div.stSlider [data-testid="stWidgetLabel"],
+div.element-container div.stSlider [data-testid="stWidgetLabel"] > * {
+    color: black !important;
+}
+
+/* Download button styling with green text */
+[data-testid="stDownloadButton"] button {
+    background-color: #4CAF50 !important;
+    color: black !important; /* Green text color */
+    border: 2px solid #4CAF50 !important;
+    font-weight: 700 !important;
+    font-size: 1.1rem !important;
+    padding: 0.75rem 1.5rem !important;
+    border-radius: 8px !important;
+    transition: all 0.3s ease !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important;
+}
