@@ -7,7 +7,7 @@ Create amazing music mashups using artificial intelligence! This tool helps you 
 
 
 [![Mashup](https://img.shields.io/badge/🎵-Listen_to_Mashup-blue)](/data/output/final_mashup.wav)
-
+ 
 
 ## ✨ Features
 
