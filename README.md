@@ -47,6 +47,22 @@ python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 ```
 
+3. Install dependencies:
+```bash
+pip install -r requirements.txt
+```
+
+## 💫 Usage
+
+1. Run the application using one of these commands:
+```bash
+python app.py
+```
+or
+```bash
+streamlit run app.py
+```
+
 2. Open your browser and go to `http://localhost:8501`
 
 3. Upload songs you want to mashup
