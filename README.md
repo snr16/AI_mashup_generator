@@ -34,21 +34,17 @@ cd AI_mashup_generator
 ```
 
 2. Create and activate a virtual environment:
+
+Using conda:
+```bash
+conda create -n mashup_ai python=3.9
+conda activate mashup_ai
+```
+
+Or using venv:
 ```bash
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
-```
-
-3. Install dependencies:
-```bash
-pip install -r requirements.txt
-```
-
-## 💫 Usage
-
-1. Run the application:
-```bash
-python app.py
 ```
 
 2. Open your browser and go to `http://localhost:8501`
