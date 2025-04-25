@@ -55,6 +55,6 @@ mashup_ai/models/*
 *.log
 logs/ 
 
-/data/output/final_mashups/*
+# Data
 /data/songs/*
 /data/separated/*
